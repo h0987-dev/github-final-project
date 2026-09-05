@@ -9,7 +9,8 @@ searchForm.addEventListener('submit', (event) => {
 	event.preventDefault();
 	const query = searchInput.value.trim().toLowerCase();
 	destinationCards.forEach((card) => {
-		card.hidden = query !== '' && !card.textContent.toLowerCase().includes(query);
+		const matchesCategory = query === 'country' && card.dataset.category === 'country';
+		card.hidden = query !== '' && !matchesCategory && !card.textContent.toLowerCase().includes(query);
 	});
 	document.getElementById('recommendations').scrollIntoView({ behavior: 'smooth' });
 });
