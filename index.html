@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Wanderwell | Travel Recommendations</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="home">
+	<header class="site-header">
+		<a class="brand" href="#home" aria-label="Wanderwell home"><span class="brand-mark">W</span> Wanderwell</a>
+		<nav class="main-nav" aria-label="Main navigation">
+			<a href="#home">Home</a>
+			<a href="#about">About Us</a>
+			<a href="#recommendations">Recommendations</a>
+			<a href="#contact">Contact Us</a>
+		</nav>
+	</header>
+
+	<main>
+		<section class="hero" aria-labelledby="hero-title">
+			<div class="hero-copy">
+				<p class="eyebrow">Travel well · feel more</p>
+				<h1 id="hero-title">Your next great<br><em>story starts here.</em></h1>
+				<p class="intro">Wanderwell is a thoughtful travel guide for curious people. Find beautiful beaches, soulful temples, and memorable places recommended with a sense of place.</p>
+				<a class="primary-link" href="#recommendations">Explore recommendations <span>↗</span></a>
+			</div>
+			<div class="hero-image-wrap">
+				<img class="hero-image" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85" alt="Turquoise ocean and a sandy beach at sunset">
+				<div class="hero-stamp">go<br><strong>somewhere</strong></div>
+			</div>
+		</section>
+
+		<section class="section about-section" id="about">
+			<div class="section-heading"><p class="eyebrow">About Wanderwell</p><h2>Travel is better when it feels personal.</h2></div>
+			<div class="about-grid">
+				<p>We collect places that reward a slower pace: a quiet cove before breakfast, a temple courtyard at golden hour, a local street where dinner becomes a memory.</p>
+				<p>Our recommendations are made for independent explorers who want practical inspiration without losing the magic of discovery. Pack lightly, stay curious, and leave room for the unexpected.</p>
+			</div>
+		</section>
+
+		<section class="section recommendations-section" id="recommendations">
+			<div class="section-heading"><p class="eyebrow">Three ways to wander</p><h2>Places worth the journey</h2></div>
+			<div class="recommendation-group">
+				<div class="group-intro"><span class="group-number">01</span><h3>Beach escapes</h3><p>Salt air, warm light, and enough space to hear yourself think.</p></div>
+				<div class="destination-grid">
+					<article class="destination-card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=85" alt="Palm trees beside a clear tropical beach"><div><h4>Railay Beach, Thailand</h4><p>Cliffs, longtail boats, and calm water make this a perfect reset.</p></div></article>
+					<article class="destination-card"><img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=900&q=85" alt="White sand beach surrounded by green hills"><div><h4>Praia da Marinha, Portugal</h4><p>A cinematic coastline for swimmers, walkers, and sunset seekers.</p></div></article>
+				</div>
+			</div>
+			<div class="recommendation-group">
+				<div class="group-intro"><span class="group-number">02</span><h3>Temple trails</h3><p>Quiet architecture, living history, and moments of wonder.</p></div>
+				<div class="destination-grid">
+					<article class="destination-card"><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=85" alt="Balinese temple gate surrounded by greenery"><div><h4>Uluwatu Temple, Bali</h4><p>Watch the Indian Ocean turn silver from a dramatic cliffside.</p></div></article>
+					<article class="destination-card"><img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=900&q=85" alt="Taj Mahal glowing in warm morning light"><div><h4>Taj Mahal, India</h4><p>Arrive early for soft light and a quieter encounter with an icon.</p></div></article>
+				</div>
+			</div>
+			<div class="recommendation-group country-group">
+				<div class="group-intro"><span class="group-number">03</span><h3>Choose by country</h3><p>Start with a feeling, then let the map take it from there.</p></div>
+				<div class="destination-grid">
+					<article class="destination-card"><img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=85" alt="Colorful village on the Italian coast"><div><h4>Italy · Slow coastlines</h4><p>Take the scenic route through villages, vineyards, and long lunches.</p></div></article>
+					<article class="destination-card"><img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=85" alt="Traditional Kyoto street with a pagoda in the distance"><div><h4>Japan · Old and new</h4><p>Find stillness in Kyoto, then follow the lights into Tokyo.</p></div></article>
+				</div>
+			</div>
+		</section>
+
+		<section class="section contact-section" id="contact">
+			<div class="contact-copy"><p class="eyebrow">Plan something good</p><h2>Tell us where you want to go.</h2><p>Have a destination in mind or need a little direction? Send us a note and we will share a few thoughtful places to begin.</p></div>
+			<form id="contact-form" class="contact-form"><label for="name">Name</label><input id="name" name="name" type="text" required><label for="email">Email</label><input id="email" name="email" type="email" required><label for="message">Message</label><textarea id="message" name="message" rows="4" required></textarea><button type="submit">Send enquiry <span>↗</span></button><p id="form-status" class="form-status" role="status"></p></form>
+		</section>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>
